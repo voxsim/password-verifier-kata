@@ -2,7 +2,7 @@
 
 namespace Verifier;
 
-class Password implements Verifier
+class PasswordVerifier implements Verifier
 {
     private $verifier;
 
@@ -17,8 +17,8 @@ class Password implements Verifier
 
     public static function create()
     {
-      return new Password(
-          new LengthLargerThen(8)
+      return new PasswordVerifier(
+        new LengthLargerThenVerifier(8)
       );
     }
 }

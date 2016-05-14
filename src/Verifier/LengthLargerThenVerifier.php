@@ -2,7 +2,7 @@
 
 namespace Verifier;
 
-class LengthLargerThen implements Verifier
+class LengthLargerThenVerifier implements Verifier
 {
     private $threshold;
 
