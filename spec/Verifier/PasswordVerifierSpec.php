@@ -23,4 +23,10 @@ class PasswordVerifierSpec extends ObjectBehavior
         $this->beConstructedThrough('create');
         $this->verify(null)->shouldReturn(false);
     }
+
+    function it_should_have_one_uppercase_letter()
+    {
+        $this->beConstructedThrough('create');
+        $this->verify(self::LOWERCASE_PASSWORD)->shouldReturn(false);
+    }
 }

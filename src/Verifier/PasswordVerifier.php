@@ -19,7 +19,8 @@ class PasswordVerifier implements Verifier
     {
       return new PasswordVerifier(
         new AndVerifier([
-          new LengthLargerThenVerifier(8)
+          new LengthLargerThenVerifier(8),
+          new OneUpperCaseLetterVerifier()
         ])
       );
     }
