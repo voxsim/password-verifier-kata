@@ -18,7 +18,9 @@ class PasswordVerifier implements Verifier
     public static function create()
     {
       return new PasswordVerifier(
-        new LengthLargerThenVerifier(8)
+        new AndVerifier([
+          new LengthLargerThenVerifier(8)
+        ])
       );
     }
 }

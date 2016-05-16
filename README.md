@@ -14,7 +14,7 @@ Create a Password verifications class called “PasswordVerifier”.
   - password should have one lowercase letter at least
   - password should have one number at least
 
-  Each one of these should throw an exception with a different message of your choosing
+  Each one of these should return true if the validation is ok.
 
 2. Add feature: Password is OK if at least three of the previous conditions is true
 
