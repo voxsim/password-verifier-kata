@@ -11,6 +11,7 @@ class PasswordVerifierSpec extends ObjectBehavior
 {
     const SHORT_PASSWORD = 'a';
     const LOWERCASE_PASSWORD = 'aaaaaaaaa';
+    const UPPERCASE_PASSWORD = 'AAAAAAAAA';
 
     function it_should_be_larger_than_8_characters()
     {
@@ -28,5 +29,11 @@ class PasswordVerifierSpec extends ObjectBehavior
     {
         $this->beConstructedThrough('create');
         $this->verify(self::LOWERCASE_PASSWORD)->shouldReturn(false);
+    }
+
+    function it_should_have_one_lowercase_letter()
+    {
+        $this->beConstructedThrough('create');
+        $this->verify(self::UPPERCASE_PASSWORD)->shouldReturn(false);
     }
 }
