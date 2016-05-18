@@ -12,7 +12,7 @@ class PasswordVerifierSpec extends ObjectBehavior
     const SHORT_PASSWORD = 'a';
     const LOWERCASE_PASSWORD = 'aaaaaaaaa';
     const UPPERCASE_PASSWORD = 'AAAAAAAAA';
-    const LETTERS_PASSWORD = 'aAAAAAAAA';
+    const LETTERS_PASSWORD = 'aA';
 
     function it_should_be_larger_than_8_characters()
     {

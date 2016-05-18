@@ -18,12 +18,12 @@ class PasswordVerifier implements Verifier
     public static function create()
     {
       return new PasswordVerifier(
-        new AndVerifier([
+        new AtLeastVerifier([
           new LengthLargerThenVerifier(8),
           new OneUpperCaseLetterVerifier(),
           new OneLowerCaseLetterVerifier(),
           new OneNumberVerifier()
-        ])
+        ], 3)
       );
     }
 }
