@@ -5,7 +5,7 @@ namespace spec\Verifier;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
-class LengthLargerThenSpec extends ObjectBehavior
+class LengthLargerThenVerifierSpec extends ObjectBehavior
 {
     const THRESHOLD = 1;
     const SHORT_STRING = '';
