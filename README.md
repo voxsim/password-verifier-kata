@@ -19,3 +19,9 @@ Create a Password verifications class called “PasswordVerifier”.
 2. Add feature: Password is OK if at least three of the previous conditions is true
 
 3. Add feature: password is never OK if item 1.4 is not true.
+
+# Instructions
+```
+composer install
+./bin/phpspec run
+```
